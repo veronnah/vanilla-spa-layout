@@ -139,6 +139,9 @@
     }
 
     @media(max-width: 320px) {
+        .about__inner{
+            margin-top: 2em;
+        }
         .about1__heading1 {
             font-size: 100px;
 
@@ -157,7 +160,8 @@
         }
 
         .buttons__down {
-            margin-left: 1.3em;
+            
+            display: none;
         }
 
         .about1__pics,

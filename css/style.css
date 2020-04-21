@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Clicker Script";
-    src: url("/fonts/ClickerScript-Regular.ttf");
+    src: url("../fonts/ClickerScript-Regular.ttf");
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?edknzg');
     src: url('../fonts/icomoon.eot?edknzg#iefix') format('embedded-opentype'),
@@ -11,7 +11,7 @@
     font-style: normal;
     font-display: block;
 }
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -271,14 +271,14 @@ svg {
     -moz-osx-font-smoothing: grayscale;
     font-size: 20px;
 }
-
+/* 
 #btn__2:before {
     font-family: 'icomoon' !important;
     content: "\e935";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 20px;
-}
+} */
 
 #btn__2:after {
     font-family: 'icomoon' !important;
@@ -371,7 +371,7 @@ svg {
     font-family: "Source Sans Pro", Georgia, serif;
     color: white;
     font-weight: 500;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     width: 180px;
     height: 32px;
     text-align: center;
@@ -394,14 +394,14 @@ svg {
     -moz-osx-font-smoothing: grayscale;
     font-size: 12px;
 }
-
+/* 
 .btn__icons2:before {
     font-family: 'icomoon' !important;
     content: "\e900";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 12px;
-}
+} */
 
 .btn__icons3:before {
     font-family: 'icomoon' !important;
