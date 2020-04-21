@@ -1,0 +1,687 @@
+@font-face {
+    font-family: "Clicker Script";
+    src: url("/fonts/ClickerScript-Regular.ttf");
+    font-family: 'icomoon';
+    src: url('/fonts/icomoon.eot?edknzg');
+    src: url('/fonts/icomoon.eot?edknzg#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.ttf?edknzg') format('truetype'),
+        url('/fonts/icomoon.woff?edknzg') format('woff'),
+        url('/fonts/icomoon.svg?edknzg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Cabin', sans-serif; */
+    /* font-family: "Clicker Script", "Monotype Corsiva", serif; */
+}
+header {
+    position: fixed;
+    height: 90px;
+    background-color: white;
+    width: 100%;
+    z-index: 3;
+    font-family: 'Cabin', sans-serif;
+}
+.header__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 55px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+ul,
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 24px 12px 12px;
+    text-align: center;
+
+}
+
+ul,
+li a {
+    transition: all .7s;
+}
+
+ul,
+li a:hover {
+    color: #188c84;
+}
+
+.social__media {
+    background-image: url("../img/facebook-2-16.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    transition: all .7s;
+    margin-top: -8px;
+}
+
+.social__media:hover {
+    cursor: pointer;
+    background-image: url("../img/facebookhover-2-16.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* select custom */
+/* .cont_select_center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -150px;
+}
+
+.cont_heg_50 {
+    position: absolute;
+    height: 50%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fd7b52;
+}
+
+.icon_select_mate {
+    position: absolute;
+    top: 17px;
+    right: 2%;
+    font-size: 16px;
+    height: 22px;
+    transition: all 275ms;
+}
+
+.select_mate {
+    position: relative;
+    max-width: 100px;
+    width: 70px;
+    max-height: 50px;
+    font-family: 'Cabin', sans-serif;
+    color: #333333;
+    font-weight: 300;
+    background-color: #fff;
+    box-shadow: 1px 2px 10px -2px rgba(0, 0, 0, 0.3); 
+    border-radius: 3px;
+    transition: all 375ms ease-in-out;
+    padding-top: 0px;
+    margin-top: 1px;
+}
+
+.select_mate select {
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.cont_list_select_mate {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.cont_select_int {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    display: inherit;
+    background-color: #fff;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
+    transition: all 375ms ease-in-out;
+}
+
+.cont_select_int li {
+    position: relative;
+    float: left;
+    width: 96%;
+    border-bottom: 1px solid #E0E0E0;
+    background-color: #F5F5F5;
+    list-style-type: none;
+    padding: 10px 2%;
+    margin: 0px;
+    transition: all 275ms ease-in-out;
+    display: block;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.cont_select_int li:last-child {
+    border-radius: 3px;
+    border-bottom: 0px;
+}
+
+.cont_select_int li:hover {
+    background-color: #EEEEEE;
+}
+
+.cont_select_int .active {
+    background-color: #EEEEEE;
+    color: #333333;
+    font-size: 13px;
+}
+.selecionado_opcion {
+    margin-top: 16px;
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    font-size: 13px;
+} */
+
+svg {
+    padding-top: 0px;
+    margin-top: 0px;
+    color: #333333;
+    width: 0px;
+}
+
+/* select custom */
+.logo {
+    max-width: 297px;
+}
+/* 
+.lang {
+    padding-top: 2px;
+} */
+
+.heading {
+    color: white;
+    line-height: .1em;
+}
+
+.heading__first{
+    font-family: 'Clicker Script';
+    font-weight: normal;
+    font-size: 150px;
+    margin-bottom: 0px;
+}
+
+.heading__second {
+    margin-top: 65px;
+    font-family: "Source Sans Pro", Georgia, serif;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+/* .heading__vector:before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    top: 415px;
+    left: 44%;
+}
+
+.heading__vector:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    top: 415px;
+    right: 44%;
+} */
+
+.heading__third {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: "Source Sans Pro", Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+#btn__1:before {
+    font-family: 'icomoon' !important;
+    content: "\f073";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+}
+
+#btn__1:after {
+    font-family: 'icomoon' !important;
+    content: "\f133";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+}
+
+#btn__2:before {
+    font-family: 'icomoon' !important;
+    content: "\e935";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+}
+
+#btn__2:after {
+    font-family: 'icomoon' !important;
+    content: "\f101";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+}
+
+.button {
+    --width: 260px;
+    --height: 45px;
+    --begin: #fff;
+    --end: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    font-size: 20px;
+    font-family: "Source Sans Pro", Georgia, serif;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding-top: 12px;
+    margin: 8px;
+}
+.button__svg,
+.button__rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: none;
+}
+.button__rect {
+    stroke: var(--begin);
+    stroke-width: 2;
+    stroke-dasharray: 140px;
+    stroke-dashoffset: calc(2 * var(--width) + 2 * var(--height) / 2);
+    transition: 1.6s;
+}
+.button:hover .button__rect,
+.button:focus .button__rect {
+    stroke: var(--end);
+    stroke-dasharray: 200px 179px;
+}
+.overlay {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .2)
+}
+.home__page {
+    position: relative;
+    background-image: url("../img/spa-krakow_cdacd9_c_scale,w_1920.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+}
+.home__inner {
+    text-align: center;
+    margin: auto;
+    margin-top: 18em;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: inherit;
+}
+.buttons__down {
+    margin-left: 2em;
+    margin-top: 9em;
+    margin-bottom: 1em;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: inherit;
+}
+#btn__dwn {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    font-family: "Source Sans Pro", Georgia, serif;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 4px;
+    width: 180px;
+    height: 32px;
+    text-align: center;
+    padding-top: 8px;
+    margin: 8px;
+}
+
+.btn__icons1:before {
+    font-family: 'icomoon' !important;
+    content: "\e90e";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+}
+
+.btn__icons1:after {
+    font-family: 'icomoon' !important;
+    content: "\f101";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+}
+
+.btn__icons2:before {
+    font-family: 'icomoon' !important;
+    content: "\e900";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+}
+
+.btn__icons3:before {
+    font-family: 'icomoon' !important;
+    content: "\e935";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+}
+
+.btn__icons4:before {
+    font-family: 'icomoon' !important;
+    content: "\f019";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+}
+
+#btn__dwn:hover {
+    background-color: white;
+    color: #188c84;
+}
+
+.about__1 {
+    background-color: white;
+    /* height: 650px; */
+}
+
+.about1__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.about1__text {
+    margin-right: 40px;
+    flex-wrap: wrap;
+}
+.about1__heading1 {
+    font-size: 130px;
+    font-family: 'Clicker Script';
+    line-height: .3em;
+    color: #188c84;
+}
+
+.about1__heading2 {
+    font-family: "Source Sans Pro", Georgia, serif;
+    letter-spacing: 9px;
+    font-size: 60px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    color: #262526;
+}
+
+.about1__text1 {
+    margin-top: 10px;
+    font-family: "Source Sans Pro", Georgia, serif;
+    max-width: 190px;
+    margin-left: 165px;
+    line-height: 1.5em;
+    color: #545453;
+}
+
+.about1__pics {
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.about1__pic {
+    margin: 10px;
+}
+
+.about__2 {
+    position: relative;
+    background-image: url("../img/zabiegi.jpg");
+    background-attachment: fixed;
+    max-height: 655px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+}
+
+.about2__heading,
+.about4__heading {
+    color: #fff;
+    font-size: 60px;
+    padding-top: 280px;
+    text-align: center;
+    font-family: "Source Sans Pro", Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-shadow:
+        -1px -1px 0px #545453,
+        0px -1px 0px #545453,
+        1px -1px 0px #545453,
+        -1px 0px 0px #545453,
+        1px 0px 0px #545453,
+        -1px 1px 0px #545453,
+        0px 1px 0px #545453,
+        1px 1px 0px #545453;
+}
+
+.about__3 {
+    background-color: white;
+    /* height: 650px; */
+}
+
+.about3__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.about3__text {
+    max-width: 550px;
+    margin-left: 25px;
+    font-family: "Source Sans Pro", Georgia, serif;
+    margin-left: 100px;
+    line-height: 1.5em;
+    color: #545453;
+    font-size: 16px;
+}
+
+p {
+    text-align: center;
+    margin: 18px;
+}
+
+.about3__pics {
+    margin-top: 50px;
+}
+
+.about3__pic {
+    margin: 12px;
+    max-width: 300px;
+}
+
+.about__4 {
+    position: relative;
+    background-image: url("../img/zespol.jpg");
+    max-height: 650px;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+}
+
+.about__5 {
+    background-color: white;
+    /* height: 745px; */
+}
+
+.about5__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.about5__text {
+    max-width: 600px;
+    margin-left: 25px;
+    font-family: "Source Sans Pro", Georgia, serif;
+    line-height: 1.6em;
+    color: #545453;
+    font-size: 17px;
+}
+
+.about5__pics {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.about5__pic {
+    margin: 12px;
+    max-width: 300px;
+}
+
+.about5__tx-down {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    align-items: center;
+    font-family: "Source Sans Pro", Georgia, serif;
+    letter-spacing: 4px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #545453;
+}
+
+.footer__top {
+    background-color: #121212;
+    min-height: 490px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__heading {
+    color: white;
+    margin: 60px;
+    align-items: center;
+    font-family: "Source Sans Pro", Georgia, serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer__buttom {
+    position: relative;
+    background-color: #262526;
+    min-height: 170px;
+}
+
+.footer {
+    position: relative;
+    /* min-height: 660px; */
+    margin: 12px;
+}
+
+#f-btn:after {
+    font-family: 'icomoon' !important;
+    content: "\f101";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+}
+
+#f-btn {
+    text-align: center;
+    font-size: 19px;
+}
+
+#footer-social__media {
+    background-image: url("../img/facebook-2-32.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    transition: all .7s;
+    margin-top: -8px;
+    height: 32px;
+}
+
+#footer-social__media:hover {
+    cursor: pointer;
+    background-image: url("../img/facebook-2-32-blue.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer__button-inf {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    font-family: "Source Sans Pro", Georgia, serif;
+    color: #8d8d8d;
+    letter-spacing: 3px;
+}
+.swal2-popup{
+    width: 900px !important;
+    height: 600px !important;
+    font-family: "Source Sans Pro", Georgia, serif !important;
+}
+
+
