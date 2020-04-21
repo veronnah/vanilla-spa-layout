@@ -2,11 +2,11 @@
     font-family: "Clicker Script";
     src: url("/fonts/ClickerScript-Regular.ttf");
     font-family: 'icomoon';
-    src: url('/fonts/icomoon.eot?edknzg');
-    src: url('/fonts/icomoon.eot?edknzg#iefix') format('embedded-opentype'),
-        url('/fonts/icomoon.ttf?edknzg') format('truetype'),
-        url('/fonts/icomoon.woff?edknzg') format('woff'),
-        url('/fonts/icomoon.svg?edknzg#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?edknzg');
+    src: url('../fonts/icomoon.eot?edknzg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?edknzg') format('truetype'),
+        url('../fonts/icomoon.woff?edknzg') format('woff'),
+        url('../fonts/icomoon.svg?edknzg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
