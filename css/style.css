@@ -210,14 +210,12 @@ svg {
     color: white;
     line-height: .1em;
 }
-
 .heading__first{
-    font-family: 'Clicker Script';
+    font-family: 'Clicker Script', "Monotype Corsiva", serif;
     font-weight: normal;
     font-size: 150px;
     margin-bottom: 0px;
 }
-
 .heading__second {
     margin-top: 65px;
     font-family: "Source Sans Pro", Georgia, serif;
